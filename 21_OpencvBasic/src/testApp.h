@@ -11,12 +11,8 @@ public:
 	void draw();
 	void keyPressed(int key);
 	
-	#ifdef _USE_LIVE_VIDEO
 	ofVideoGrabber vidGrabber;
-	#else
-	ofVideoPlayer vidPlayer;
-	#endif
-	
+		
 	ofxCvColorImage colorImg;
 	ofxCvGrayscaleImage grayImage;
 	ofxCvGrayscaleImage grayBg;

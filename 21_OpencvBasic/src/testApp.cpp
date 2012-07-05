@@ -2,14 +2,10 @@
 
 void testApp::setup(){
 	ofSetFrameRate(60);
+	ofEnableAlphaBlending();
 	
-	#ifdef _USE_LIVE_VIDEO
 	vidGrabber.setVerbose(true);
 	vidGrabber.initGrabber(320,240);
-	#else
-	vidPlayer.loadMovie("fingers.mov");
-	vidPlayer.play();
-	#endif
 	
     colorImg.allocate(320,240);
 	grayImage.allocate(320,240);
@@ -17,7 +13,8 @@ void testApp::setup(){
 	grayDiff.allocate(320,240);
 	
 	bLearnBakground = true;
-	threshold = 80;
+	threshold = 100;
+	
 }
 
 void testApp::update(){
@@ -25,20 +22,11 @@ void testApp::update(){
 	
     bool bNewFrame = false;
 	
-	#ifdef _USE_LIVE_VIDEO
 	vidGrabber.grabFrame();
 	bNewFrame = vidGrabber.isFrameNew();
-	#else
-	vidPlayer.idleMovie();
-	bNewFrame = vidPlayer.isFrameNew();
-	#endif
 	
 	if (bNewFrame){
-		#ifdef _USE_LIVE_VIDEO
 		colorImg.setFromPixels(vidGrabber.getPixels(), 320,240);
-		#else
-		colorImg.setFromPixels(vidPlayer.getPixels(), 320,240);
-		#endif
 		
         grayImage = colorImg;
 		if (bLearnBakground == true){
@@ -55,27 +43,14 @@ void testApp::update(){
 
 void testApp::draw(){
 	
-	ofSetHexColor(0xffffff);
-	colorImg.draw(20,20);
-	grayImage.draw(360,20);
-	grayBg.draw(20,280);
-	grayDiff.draw(360,280);
-	
 	ofFill();
 	ofSetHexColor(0x333333);
-	ofRect(360,540,320,240);
+	ofRect(0,0,ofGetWidth(),ofGetHeight());
 	
 	ofSetHexColor(0xffffff);
-	contourFinder.draw(360,540);
+	contourFinder.draw(0,0);
 	
-	ofSetHexColor(0xffffff);
-	string repstr;
-	repstr = "bg subtraction and blob detection\n";
-	repstr += "press space to capture bg\n";
-	repstr += "threshold" + ofToString(threshold, 0) + "(press: +/-)\n";
-	repstr += "num blobs found " + ofToString(contourFinder.nBlobs, 0) + "\n";
-	repstr += "fps: " + ofToString(ofGetFrameRate(), 4);
-	ofDrawBitmapString(repstr, 20, 600);
+	
 }
 
 void testApp::keyPressed(int key){
