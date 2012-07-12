@@ -6,14 +6,16 @@ void testApp::setup(){
 	
 	vidGrabber.setVerbose(true);
 	vidGrabber.initGrabber(320,240);
+	//vidGrabber.initGrabber(640,480);
 	
     colorImg.allocate(320,240);
 	grayImage.allocate(320,240);
 	grayBg.allocate(320,240);
 	grayDiff.allocate(320,240);
+	//grayDiff.allocate(640,480);
 	
 	bLearnBakground = true;
-	threshold = 100;
+	  threshold = 100;
 	
 }
 
