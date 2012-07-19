@@ -298,7 +298,7 @@
 							<real>261</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>161 112 982 766 0 0 1440 878 </string>
+						<string>110 112 982 766 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -328,23 +328,29 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C509AC8415B7DC79002B2DB0</string>
+										<string>C509AE6115B805B3002B2DB0</string>
 										<key>history</key>
 										<array>
-											<string>C5FC749F15A597C000074606</string>
-											<string>C509AC4A15B7D6A5002B2DB0</string>
-											<string>C509AC5915B7D800002B2DB0</string>
-											<string>C509AC5B15B7D800002B2DB0</string>
-											<string>C509AC7615B7DC61002B2DB0</string>
-											<string>C509AC7715B7DC61002B2DB0</string>
-											<string>C509AC7815B7DC61002B2DB0</string>
-											<string>C509AC7915B7DC61002B2DB0</string>
-											<string>C509AC7A15B7DC61002B2DB0</string>
-											<string>C509AC7B15B7DC61002B2DB0</string>
-											<string>C509AC7C15B7DC61002B2DB0</string>
-											<string>C509AC7D15B7DC61002B2DB0</string>
-											<string>C509AC7E15B7DC61002B2DB0</string>
-											<string>C509AC7F15B7DC61002B2DB0</string>
+											<string>C509AE1E15B7FD41002B2DB0</string>
+											<string>C509AE1F15B7FD41002B2DB0</string>
+											<string>C509AE2015B7FD41002B2DB0</string>
+											<string>C509AE2115B7FD41002B2DB0</string>
+											<string>C509AE2215B7FD41002B2DB0</string>
+											<string>C509AE2315B7FD41002B2DB0</string>
+											<string>C509AE2415B7FD41002B2DB0</string>
+											<string>C509AE2515B7FD41002B2DB0</string>
+											<string>C509AE2615B7FD41002B2DB0</string>
+											<string>C509AE2715B7FD41002B2DB0</string>
+											<string>C509AE2815B7FD41002B2DB0</string>
+											<string>C509AE2915B7FD41002B2DB0</string>
+											<string>C509AE2A15B7FD41002B2DB0</string>
+											<string>C509AE2B15B7FD41002B2DB0</string>
+											<string>C509AE2C15B7FD41002B2DB0</string>
+											<string>C509AE2D15B7FD41002B2DB0</string>
+											<string>C509AE2E15B7FD41002B2DB0</string>
+											<string>C509AE4215B80295002B2DB0</string>
+											<string>C509AE4315B80295002B2DB0</string>
+											<string>C509AE4415B80295002B2DB0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -358,7 +364,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {699, 647}}</string>
 								<key>RubberWindowFrame</key>
-								<string>161 112 982 766 0 0 1440 878 </string>
+								<string>110 112 982 766 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -378,7 +384,7 @@
 								<key>Frame</key>
 								<string>{{0, 652}, {699, 73}}</string>
 								<key>RubberWindowFrame</key>
-								<string>161 112 982 766 0 0 1440 878 </string>
+								<string>110 112 982 766 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -542,7 +548,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>C509AC8515B7DC79002B2DB0</string>
+		<string>C509AE6215B805B3002B2DB0</string>
 		<string>C509AC4615B7D667002B2DB0</string>
 		<string>C509AC4715B7D667002B2DB0</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -551,7 +557,7 @@
 		<string>/Users/nakazatomasaya/of_preRelease_v007_osx/apps/dbsh_art/21_OpencvBasic/OpencvBasic.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>161 112 982 766 0 0 1440 878 </string>
+	<string>110 112 982 766 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
