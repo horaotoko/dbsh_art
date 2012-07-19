@@ -770,6 +770,16 @@
 		vrLen = 926;
 		vrLoc = 21;
 	};
+	C509AE6315B8077B002B2DB0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */;
+		name = "testApp.cpp: 4";
+		rLen = 0;
+		rLoc = 48;
+		rType = 0;
+		vrLen = 931;
+		vrLoc = 21;
+	};
 	C585B6FE15AEC2DA005E2AAC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */;
@@ -994,6 +1004,7 @@
 			C509AE5915B803F7002B2DB0 /* PBXTextBookmark */ = C509AE5915B803F7002B2DB0 /* PBXTextBookmark */;
 			C509AE5D15B80436002B2DB0 /* PBXTextBookmark */ = C509AE5D15B80436002B2DB0 /* PBXTextBookmark */;
 			C509AE6115B805B3002B2DB0 /* PBXTextBookmark */ = C509AE6115B805B3002B2DB0 /* PBXTextBookmark */;
+			C509AE6315B8077B002B2DB0 /* PBXTextBookmark */ = C509AE6315B8077B002B2DB0 /* PBXTextBookmark */;
 			C585B6FE15AEC2DA005E2AAC = C585B6FE15AEC2DA005E2AAC /* PBXTextBookmark */;
 			C585B75815AECDF5005E2AAC = C585B75815AECDF5005E2AAC /* PBXTextBookmark */;
 			C585B75915AECDF5005E2AAC = C585B75915AECDF5005E2AAC /* PBXTextBookmark */;
@@ -1022,9 +1033,9 @@
 	};
 	E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {638, 1235}}";
+			sepNavIntBoundsRect = "{{0, 0}, {638, 1248}}";
 			sepNavSelRange = "{48, 0}";
-			sepNavVisRange = "{21, 926}";
+			sepNavVisRange = "{21, 931}";
 		};
 	};
 	E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {
