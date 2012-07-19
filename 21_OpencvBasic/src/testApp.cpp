@@ -6,12 +6,12 @@ void testApp::setup(){
 	
 	vidGrabber.setVerbose(true);
 	//vidGrabber.initGrabber(320,240);
-	vidGrabber.initGrabber(640,480);
+	vidGrabber.initGrabber(1024,768);
 	
-    colorImg.allocate(640,480);
-	grayImage.allocate(640,480);
-	grayBg.allocate(640,480);
-	grayDiff.allocate(640,480);
+    colorImg.allocate(1024,768);
+	grayImage.allocate(1024,768);
+	grayBg.allocate(1024,768);
+	grayDiff.allocate(1024,768);
 	//grayDiff.allocate(640,480);
 	
 	bLearnBakground = true;
@@ -28,7 +28,7 @@ void testApp::update(){
 	bNewFrame = vidGrabber.isFrameNew();
 	
 	if (bNewFrame){
-		colorImg.setFromPixels(vidGrabber.getPixels(), 640,480);
+		colorImg.setFromPixels(vidGrabber.getPixels(), 1024,768);
 		
         grayImage = colorImg;
 		if (bLearnBakground == true){
@@ -39,7 +39,7 @@ void testApp::update(){
 		grayDiff.absDiff(grayBg, grayImage);
 		grayDiff.threshold(threshold);
 		
-		contourFinder.findContours(grayDiff, 20, (640*480)/3, 10, true);
+		contourFinder.findContours(grayDiff, 20, (1024*768)/3, 10, true);
 	}
 }
 
